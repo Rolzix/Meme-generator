@@ -5,12 +5,12 @@
 body {
   font-family: "Karla", sans-serif;
   margin: 0;
-  width: 550px;
-  height: 550px;
+  max-width: 720px;
+  max-height: 550px;
+  background: black;
 }
 
 .nav--main {
-  width: 550px;
   height: 65px;
   left: 0px;
   top: 0px;
