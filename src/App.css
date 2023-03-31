@@ -79,3 +79,14 @@ body {
   color: #ffffff;
   cursor: pointer;
 }
+
+.newImage:hover {
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  opacity: 0.8;
+}
+
+.memeImage {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}

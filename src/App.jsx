@@ -11,7 +11,6 @@ export default function App() {
     <div>
       <Header />
       <Meme />
-      <h1>Hello world!</h1>
     </div>
   );
 }
