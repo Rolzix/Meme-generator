@@ -16,7 +16,7 @@ export default function Meme() {
 
   function getImage() {
     let rand = Math.floor(Math.random() * allMemeImages.length);
-    console.log(allMemeImages.length);
+    // console.log(allMemeImages.length);
     let url = allMemeImages[rand].url;
     setMeme({ ...meme, randomImage: url });
   }
@@ -29,6 +29,7 @@ export default function Meme() {
           placeholder="Top text"
           name="TopText"
           onChange={updateText}
+          value={meme.TopText}
         />
         <input
           className="lowerInput"
@@ -36,6 +37,7 @@ export default function Meme() {
           placeholder="Bottom text"
           name="BottomText"
           onChange={updateText}
+          value={meme.BottomText}
         />
         <button onClick={getImage} className="newImage">
           Get a new meme image 🖼
