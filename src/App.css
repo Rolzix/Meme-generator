@@ -87,6 +87,7 @@ body {
 
 .meme {
   position: relative;
+  margin-top: 50px;
 }
 
 .meme--image {
