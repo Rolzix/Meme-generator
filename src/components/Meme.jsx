@@ -43,15 +43,16 @@ export default function Meme() {
   }, [elements]);
 
   function updateText(id, e) {
+    const { name, value } = e.target;
+    console.log(name, value);
     console.log(id, e.target.value);
-    console.log(id.BottomText);
     console.log(elements);
     // console.log(elements[id].text);
     // update elements.text based of id
     setElements(
       elements.map((element) => {
         if (element.id === id) {
-          return { ...element, text: e.target.value };
+          return { ...element, [name]: value };
         } else {
           return element;
         }
@@ -74,23 +75,25 @@ export default function Meme() {
           <input
             type="text"
             placeholder="Top text"
-            name="TopText"
+            name="text"
             onChange={(e) => updateText(element.id, e)}
             value={element.text}
           />
           <input
+            name="x"
             type="range"
             min="0"
             max="100"
             // value={sliderValue}
-            // onChange={handleSliderChange}
+            onChange={(e) => updateText(element.id, e)}
           />
           <input
+            name="y"
             type="range"
             min="0"
             max="100"
             // value={sliderValue}
-            // onChange={handleSliderChange}
+            onChange={(e) => updateText(element.id, e)}
           />
         </div>
       );
