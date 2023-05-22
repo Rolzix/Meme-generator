@@ -11,10 +11,10 @@ export default function Meme() {
   // const [inputAmount, setInputAmount] = React.useState(2);
   // console.log(allMemes);
   const [elements, setElements] = React.useState([
-    { id: 1, text: "One does not simplyy", x: 50, y: 0 },
+    { id: 1, text: "One does not simply", x: 50, y: 0 },
     {
       id: 2,
-      text: "Walk into Mordorr",
+      text: "Walk into Mordor",
       x: 50,
       y: 80,
     },
@@ -23,8 +23,8 @@ export default function Meme() {
   const handleAddElement = () => {
     const newElement = {
       id: Math.random().toString(36).substring(7),
-      x: 0,
-      y: 0,
+      x: 50,
+      y: 50,
       text: "test",
     };
     setElements([...elements, newElement]);
@@ -71,7 +71,7 @@ export default function Meme() {
     let inputArray = [];
     elements.map((element) => {
       inputArray.push(
-        <div key={element.id}>
+        <div key={element.id} className="inputs">
           <input
             type="text"
             placeholder="Top text"
@@ -126,7 +126,9 @@ export default function Meme() {
   return (
     <main>
       <div className="textInput">
-        <button onClick={handleAddElement}>Add text</button>
+        <button className="addText--button" onClick={handleAddElement}>
+          Add text
+        </button>
         {console.log("render test")}
         {inputAndSliders()}
 
@@ -135,7 +137,7 @@ export default function Meme() {
           <br />
         </button>
       </div>
-      <div className="inputForm">
+      <div className="imageField">
         <div className="meme">
           <img src={meme.randomImage} className="meme--image" />
 
