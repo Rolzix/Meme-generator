@@ -12,29 +12,46 @@ body {
   font-family: "Karla", sans-serif;
   margin: auto;
   max-width: 720px;
+  min-width: 300px;
   max-height: 550px;
   background: black;
 }
 
 .nav--main {
-  /* height: 65px; */
+  height: 100px;
   left: 0px;
   top: 0px;
   display: flex;
   align-items: center;
+  text-align: center;
   gap: 10px;
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
 }
 
 .nav--image {
-  height: 100%;
-  padding: 10px;
+  position: fixed;
 
+  height: 100px;
+  padding: 10px;
   margin-left: 20px;
 }
 
+@media screen and (max-width: 450px) {
+  .nav--image {
+    position: relative;
+    margin: 0;
+  }
+  .nav--main {
+    flex-direction: column;
+    height: 150px;
+  }
+}
+
 .nav--main > h1 {
-  width: 140.79px;
+  /* center text */
+  margin: auto;
+
+  width: 300px;
   height: 24px;
   left: 58px;
   top: 21px;
@@ -42,7 +59,7 @@ body {
   font-family: "Karla";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 24px;
   letter-spacing: -0.1em;
 
