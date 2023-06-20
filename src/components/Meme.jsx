@@ -24,6 +24,7 @@ export default function Meme() {
   const handleAddElement = () => {
     const newElement = {
       id: Math.random().toString(36).substring(7),
+      fontSize: 30,
       x: 50,
       y: 50,
       text: "test",
@@ -99,6 +100,7 @@ export default function Meme() {
             max="100"
             // value={sliderValue}
             onChange={(e) => updateText(element.id, e)}
+            value={element.x}
           />
           <input
             name="y"
@@ -107,6 +109,7 @@ export default function Meme() {
             max="100"
             // value={sliderValue}
             onChange={(e) => updateText(element.id, e)}
+            value={element.y}
           />
           <button onClick={(e) => handleRemoveElement(element.id, e)}>X</button>
         </div>
