@@ -135,7 +135,11 @@ export default function Meme() {
         <button className="addText--button" onClick={handleAddElement}>
           Add text
         </button>
-        {console.log("render test")}
+        <div className="legend--container">
+          <div className="legend--text">Input text:</div>
+          <div className="legend--text">Left/Right</div>
+          <div className="legend--text">Up/Down</div>
+        </div>
         {inputAndSliders()}
 
         <button onClick={getImage} className="newImage">
