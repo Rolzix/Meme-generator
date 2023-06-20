@@ -90,6 +90,18 @@ input {
   display: flex;
 }
 
+.inputs > button {
+  width: 50px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: #af4c4c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .addText--button {
   padding: 10px 20px;
   margin-top: 20px;

@@ -30,6 +30,11 @@ export default function Meme() {
     setElements([...elements, newElement]);
   };
 
+  const handleRemoveElement = (id, e) => {
+    e.preventDefault();
+    setElements(elements.filter((element) => element.id !== id));
+  };
+
   React.useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
       .then((response) => response.json())
@@ -95,6 +100,7 @@ export default function Meme() {
             // value={sliderValue}
             onChange={(e) => updateText(element.id, e)}
           />
+          <button onClick={(e) => handleRemoveElement(element.id, e)}>X</button>
         </div>
       );
     });
