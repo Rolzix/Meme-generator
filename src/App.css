@@ -87,7 +87,20 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+.addText--button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #4caf50;
+  /* margin: 10px; */
+  cursor: pointer;
+}
 input {
   border: 1px solid #d5d4d8;
   /* vertical center input sliders */
@@ -105,6 +118,10 @@ input {
   color: #ffffff;
 }
 
+.fontSize {
+  width: 150px;
+}
+
 .inputs > button {
   width: 50px;
   height: 35px;
@@ -114,21 +131,6 @@ input {
   color: #fff;
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
-}
-
-.addText--button {
-  padding: 10px 20px;
-  margin-top: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  border: none;
-  color: #fff;
-  background-color: #4caf50;
-  /* margin: 10px; */
   cursor: pointer;
 }
 

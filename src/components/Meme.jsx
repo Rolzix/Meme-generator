@@ -11,10 +11,11 @@ export default function Meme() {
   // const [inputAmount, setInputAmount] = React.useState(2);
   // console.log(allMemes);
   const [elements, setElements] = React.useState([
-    { id: 1, text: "One does not simply", x: 50, y: 0 },
+    { id: 1, text: "One does not simply", fontSize: 30, x: 50, y: 0 },
     {
       id: 2,
       text: "Walk into Mordor",
+      fontSize: 30,
       x: 50,
       y: 80,
     },
@@ -85,6 +86,13 @@ export default function Meme() {
             value={element.text}
           />
           <input
+            type="number"
+            className="fontSize"
+            name="fontSize"
+            onChange={(e) => updateText(element.id, e)}
+            value={element.fontSize}
+          />
+          <input
             name="x"
             type="range"
             min="0"
@@ -120,6 +128,7 @@ export default function Meme() {
             position: "absolute",
             top: `${element.y}%`,
             left: `${element.x}%`,
+            fontSize: `${element.fontSize}px`,
           }}
         >
           {element.text}
