@@ -27,7 +27,7 @@ export default function Meme() {
       fontSize: 30,
       x: 50,
       y: 50,
-      text: "test",
+      text: "New text",
     };
     setElements([...elements, newElement]);
   };
