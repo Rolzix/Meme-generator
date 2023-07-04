@@ -3,11 +3,6 @@
   /* border: 1px solid green; */
 }
 
-/* html {
-  display: flex;
-  justify-content: center;
-} */
-
 body {
   font-family: "Karla", sans-serif;
   margin: auto;
@@ -37,7 +32,6 @@ body {
 }
 
 .nav--main > h1 {
-  /* center text */
   margin: auto;
 
   width: 300px;
@@ -75,7 +69,6 @@ body {
 }
 
 .legend--text {
-  /* flex: 1; */
   width: 150px;
   min-width: 0;
   white-space: nowrap;
@@ -93,7 +86,6 @@ body {
   border: none;
   color: #fff;
   background-color: #4caf50;
-  /* margin: 10px; */
   cursor: pointer;
 }
 input {
@@ -132,7 +124,6 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* align-items: flex-end; */
   margin: 0px 37px;
 }
 
@@ -175,11 +166,10 @@ input {
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  /* margin: 15px 0; */
   padding: 0 5px;
   font-family: impact, sans-serif;
   font-size: 2em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: white;
   letter-spacing: 1px;
   text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
@@ -194,20 +184,7 @@ input {
 .top {
   top: 0;
 }
-/* 
- legend {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-}
 
-fieldset {
-  border: none; 
-  padding: 0;
-  margin: 0;
-  width: 500px;
-} */
 @media screen and (max-width: 450px) {
   .nav--image {
     position: relative;

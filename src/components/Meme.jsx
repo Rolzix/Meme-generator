@@ -2,20 +2,16 @@ import React from "react";
 
 export default function Meme() {
   let [meme, setMeme] = React.useState({
-    TopText: "One does not simply",
-    BottomText: "Walk into Mordor",
     randomImage: "http://i.imgflip.com/1bij.jpg",
   });
   let [allMemes, setallMemes] = React.useState([]);
-  // const [sliderValue, setSliderValue] = React.useState(0);
-  // const [inputAmount, setInputAmount] = React.useState(2);
   // console.log(allMemes);
   const [elements, setElements] = React.useState([
-    { id: 1, text: "One does not simply", fontSize: 30, x: 50, y: 0 },
+    { id: 1, text: "ONE DOES NOT SIMPLY", fontSize: 40, x: 50, y: 5 },
     {
       id: 2,
-      text: "Walk into Mordor",
-      fontSize: 30,
+      text: "WALK INTO MORDOR",
+      fontSize: 40,
       x: 50,
       y: 80,
     },
@@ -46,14 +42,14 @@ export default function Meme() {
   }, []);
 
   React.useEffect(() => {
-    console.log(elements);
+    // console.log(elements);
   }, [elements]);
 
   function updateText(id, e) {
     const { name, value } = e.target;
-    console.log(name, value);
-    console.log(id, e.target.value);
-    console.log(elements);
+    // console.log(name, value);
+    // console.log(id, e.target.value);
+    // console.log(elements);
     // console.log(elements[id].text);
     // update elements.text based of id
     setElements(
