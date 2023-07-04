@@ -2,7 +2,7 @@
 
 This Meme Generator lets you create memes with your own text.
 
-**Link to APP**
+**https://meme-generator-steel-eight.vercel.app/**
 
 ## What you might not find in other Meme Generators (non-tutorial features):
 
