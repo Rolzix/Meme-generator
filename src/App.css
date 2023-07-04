@@ -64,7 +64,6 @@ body {
 }
 
 .legend--container {
-  /* make div shring with page */
   width: 100%;
 
   font-size: 1.5rem;
@@ -72,11 +71,7 @@ body {
   text-align: center;
   color: #ffffff;
   display: flex;
-  /* flex-grow: 1; */
-  /* width: 100%; */
-  /* gap: 10px; */
-  margin-left: -30px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .legend--text {
@@ -103,7 +98,6 @@ body {
 }
 input {
   border: 1px solid #d5d4d8;
-  /* vertical center input sliders */
 
   width: 100%;
   min-width: 1px;
