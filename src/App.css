@@ -24,7 +24,7 @@ body {
 }
 
 .nav--image {
-  position: fixed;
+  position: absolute;
 
   height: 100px;
   padding: 10px;
