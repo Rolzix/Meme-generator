@@ -4,6 +4,8 @@ This Meme Generator lets you create memes with your own text.
 
 **https://meme-generator-rolzix.vercel.app/**
 
+![MemeG](https://github.com/Rolzix/Meme-generator/assets/107266349/923a50d1-5e9b-4692-8590-9e5bb7eb8f65)
+
 ## What you might not find in other Meme Generators (non-tutorial features):
 
 - [x] Ability to add and remove text
